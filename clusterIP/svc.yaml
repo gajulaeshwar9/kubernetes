@@ -10,4 +10,4 @@ spec:
     object: pod
   ports:
     - port: 8080
-      protocol: HTTP
+      protocol: TCP
