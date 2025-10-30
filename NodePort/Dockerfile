@@ -1,5 +1,5 @@
 FROM maven:4.0.0-rc-4-sapmachine-25 AS BUILD_IMAGE
-RUN https://github.com/spring-projects/spring-petclinic.git
+RUN git clone https://github.com/spring-projects/spring-petclinic.git
 RUN cd spring-petclinic && mvn install
 
 FROM tomcat:eclipse-temurin:25-jdk-noble AS RUNTIME
