@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: CIP-Pod
+  name: CIPpod
   labels: 
     object: pod
 spec:
