@@ -6,4 +6,4 @@ FROM tomcat:11.0.13-jdk25-temurin-noble AS RUNTIME
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=BUILD_IMAGE /spring-petclinic/target/*jar /usr/local/tomcat/webapps/ROOT.jar
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+CMD ["java", "-jar", "ROOT.jar"]
