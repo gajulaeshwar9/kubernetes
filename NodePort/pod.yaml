@@ -6,4 +6,8 @@ metadata:
     obj: node-port
 spec:
   containers:
-    image: 
+    image: gajulaeshwar/nodeport
+    ports:
+      - containerPort: 80
+        protocol: TCP
+
