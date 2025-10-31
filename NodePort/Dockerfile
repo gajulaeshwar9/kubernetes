@@ -1,4 +1,4 @@
-FROM maven:4.0.0-rc-4-sapmachine-25 AS BUILD_IMAGE
+FROM maven:3.9.11-eclipse-temurin-25-alpine  AS BUILD_IMAGE
 ADD . /app
 WORKDIR /app
 RUN mvn package
