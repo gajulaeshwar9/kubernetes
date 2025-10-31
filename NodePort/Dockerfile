@@ -1,7 +1,7 @@
 FROM maven:3.9.11-eclipse-temurin-25-alpine  AS BUILD_IMAGE
 ADD . /app
 WORKDIR /app
-RUN cd spring-petclinic && mvn package
+RUN mvn package
 
 #FROM tomcat:11.0.13-jdk25-temurin-noble AS RUNTIME
 FROM eclipse-temurin:25_36-jdk AS runtime   
