@@ -1,5 +1,5 @@
-FROM maven:3.9.11-eclipse-temurin-25-alpine  AS BUILD_IMAGE
-ADD . /app
+FROM eclipse-temurin:25-jdk-alpine  AS BUILD_IMAGE
+ADD /spring-petclinic /app
 WORKDIR /app
 RUN mvn package
 
